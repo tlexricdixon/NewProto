@@ -124,22 +124,25 @@ body {
 }
 /* Agency Masthead */
 .agency-masthead {
-    background: #75674d;
-    color: var(--agency-header-fg);
+    background-color: #75674d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
 }
 
 .agency-masthead__inner {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+    width: 100%;
+    max-width: 1400px;
+    margin-inline: auto;
+    gap: 2rem;
 }
 
 .agency-brand {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     text-decoration: none;
     color: #ffffff;
+    flex-shrink: 0;
 }
 
 .agency-brand__seal {
@@ -148,25 +151,62 @@ body {
 
     .agency-brand__seal img {
         display: block;
-        max-width: 175px;
+        width: 175px;
+        height: auto;
     }
+
 
 .agency-brand__text {
     display: flex;
     flex-direction: column;
+    line-height: 1.15;
 }
-
-.agency-brand__name {
-    color: #ffffff;
+.agency-brand__state {
+    font-size: 0.9rem;
     font-weight: 500;
-    font-size: 1.1rem;
+}
+.agency-brand__name {
+    /*color: #ffffff;*/
+    font-weight: 700;
+    font-size: 1.25rem;
 }
 
     .agency-brand__name:first-child {
         font-size: 0.9rem;
         opacity: 0.9;
     }
+.agency-masthead .nav-link {
+    color: #fff;
+    white-space: nowrap;
+    padding: 0.75rem 1rem;
+}
 
+    .agency-masthead .nav-link:hover {
+        color: #fff;
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+    }
+
+    .agency-masthead .nav-link:focus-visible {
+        color: #fff;
+        outline: 3px solid #ffbf47;
+        outline-offset: 2px;
+    }
+.agency-masthead .navbar-toggler {
+    border: 2px solid #fff;
+    padding: 0.5rem;
+}
+
+    .agency-masthead .navbar-toggler:focus-visible {
+        outline: 3px solid #ffbf47;
+        outline-offset: 3px;
+        box-shadow: none;
+    }
+
+/* Makes Bootstrap's default hamburger visible on the brown background */
+.agency-masthead .navbar-toggler-icon {
+    filter: invert(1);
+}
 @media (max-width: 768px) {
     .agency-masthead__inner {
         gap: 1rem;
@@ -818,4 +858,37 @@ code {
     #carouselExampleCaptions .carousel-item {
         height: clamp(180px, 45vh, 360px);
     }
+}
+@media (max-width: 1399.98px) {
+    .agency-masthead__inner {
+        flex-wrap: wrap;
+    }
+
+    .agency-masthead .navbar {
+        flex-grow: 0;
+    }
+
+    .agency-masthead .navbar-collapse {
+        flex-basis: 100%;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .agency-masthead .navbar-nav {
+        width: 100%;
+        align-items: stretch;
+    }
+
+    .agency-masthead .nav-link {
+        display: block;
+        width: 100%;
+        padding: 0.85rem 0;
+    }
+}
+.agency-masthead .navbar {
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.agency-masthead .navbar-nav {
+    align-items: stretch;
 }

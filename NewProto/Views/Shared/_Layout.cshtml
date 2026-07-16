@@ -19,46 +19,91 @@
                 <p>Illinois State Police</p>
             </div>
         </div>
-
         <div class="agency-masthead">
-            <div class="agency-masthead__inner">
-                <a class="agency-brand" asp-area="" asp-controller="Home" asp-action="Index">
-                    <span class="agency-brand__seal rounded mx-auto d-block" aria-hidden="true">
-                        <img src="~/img/isp_department seal (scaled).png" height="100" alt="Alternate Text" />
+            <div class="agency-masthead__inner d-flex align-items-center justify-content-between w-100">
+                <a class="agency-brand d-flex align-items-center text-decoration-none"
+                   asp-area=""
+                   asp-controller="Home"
+                   asp-action="Index"
+                   aria-label="Illinois State Police home">
+                    <span class="agency-brand__seal flex-shrink-0">
+                        <img src="~/img/isp_department seal (scaled).png"
+                             class="img-fluid"
+                             width="100"
+                             height="100"
+                             alt="" />
                     </span>
-                    <span>
-                        <span class="agency-brand__name ">State of Illinois</span>
-                        <span class="agency-brand__name">Illinois State Police</span>
+                    <span class="agency-brand__text">
+                        <span class="agency-brand__name">Illinois</span>
+                        <span class="agency-brand__state">State Police</span>
                     </span>
                 </a>
-                <nav>
-                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index" a11y-hit-target="@A11yTargetSize.Minimum">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services" a11y-hit-target="@A11yTargetSize.Minimum">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#records" a11y-hit-target="@A11yTargetSize.Minimum">Records</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#safety" a11y-hit-target="@A11yTargetSize.Minimum">Public Safety</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" a11y-hit-target="@A11yTargetSize.Minimum">Contact</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html" target="_blank" a11y-sr-only-hint a11y-hit-target="@A11yTargetSize.Minimum">
-                                WCAG Guidance
-                            </a>
-                        </li>
-                    </ul>
+                <nav class="navbar navbar-expand-xxl ms-auto p-0"
+                     aria-label="Primary navigation">
+                    <button class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#primaryNavigation"
+                            aria-controls="primaryNavigation"
+                            aria-expanded="false"
+                            aria-label="Toggle primary navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="primaryNavigation">
+                        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   asp-area=""
+                                   asp-controller="Home"
+                                   asp-action="Index"
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#services"
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    Services
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#records"
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    Records
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#safety"
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    Public Safety
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="#contact"
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                   href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   a11y-sr-only-hint
+                                   a11y-hit-target="@A11yTargetSize.Minimum">
+                                    WCAG Guidance
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
-        @* <nav class="navbar navbar-expand-lg navbar-dark border-bottom box-shadow mb-3" aria-label="Primary navigation">
-                <div class="container-fluid">
-                    <a class="head-buttons nav-link btn-link" asp-area="" asp-controller="Home" asp-action="Index" a11y-hit-target="@A11yTargetSize.Minimum">Home</a>
-                    <a class="head-buttons nav-link btn-link" href="#services" a11y-hit-target="@A11yTargetSize.Minimum">Services</a>
-                    <a class="head-buttons nav-link btn-link" href="#records" a11y-hit-target="@A11yTargetSize.Minimum">Records</a>
-                    <a class="head-buttons nav-link btn-link" href="#safety" a11y-hit-target="@A11yTargetSize.Minimum">Public Safety</a>
-                    <a class="head-buttons nav-link btn-link" href="#contact" a11y-hit-target="@A11yTargetSize.Minimum">Contact</a>
-                    <a class="head-buttons nav-link btn-link" href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html" target="_blank" a11y-sr-only-hint a11y-hit-target="@A11yTargetSize.Minimum">
-                        WCAG Guidance
-                    </a>
-                </div>
-            </nav> *@
     </header>
     <main role="main" class="pb-3">
         @RenderBody()
