@@ -12,13 +12,8 @@
 </head>
 <body >
     <a a11y-skip-link a11y-skip-target="content">Skip to main content</a>
-    <header class="agency-header" >
-        <div class="official-banner">
-            <div class="official-banner__inner">
-                <span aria-hidden="true">ISP</span>
-                <p>Illinois State Police</p>
-            </div>
-        </div>
+    <header class="agency-header container-fluid">
+        @await Html.PartialAsync("_agencyBanner")   
         <div class="header">
             <div class="agency-masthead__inner d-flex align-items-center justify-content-between w-100">
                 <a class="agency-brand d-flex align-items-center text-decoration-none"
@@ -36,6 +31,7 @@
                     <span class="agency-brand__text">
                         <span class="agency-brand__state">Illinois</span>
                         <span class="agency-brand__name">State Police</span>
+                        <span class="agency-brand__name">Integrity, Service, Pride</span>
                     </span>
                 </a>
                 <div class="isp-header-tools d-none d-lg-flex">

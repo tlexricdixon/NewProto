@@ -597,6 +597,70 @@ code {
     padding: 0.5rem 0.65rem;
 }
 /* Bootstrap 5 ISP branded accessible primary button */
+.btn-isp-rounded {
+    color: #ffffff;
+    background-color: #5F3212;
+    border-color: #5F3212;
+    border: 1px solid #5F3212;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-isp-primary-rounded {
+    color: #5F3212;
+    background-color: #ffffff;
+    border-color: #0000ff;
+    border: 1px solid #5F3212;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+    .btn-isp-primary-rounded:hover {
+        color: #ffffff;
+        background-color: #5F3212;
+        border-color: #5F3212;
+        border: 1px solid #5F3212;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 1rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
+.btn-isp-rounded {
+    color: #ffffff;
+    background-color: #5F3212;
+    border-color: #5F3212;
+    border: 1px solid #5F3212;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.75rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .btn-isp {
     color: #ffffff;
     background-color: #5F3212;
