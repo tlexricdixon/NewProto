@@ -3,48 +3,8 @@
     Layout = "/Views/Shared/_Layout2.cshtml";
 }
 @await Html.PartialAsync("_carousel")
+@await Html.PartialAsync("_featuredServices")
 
-<div class="row justify-content-center" style="border-top: 10px solid #bc963e; border-bottom: 10px solid #bc963e;">
-    <div class="col-lg-12 section-heading" style="background-color: #c0cedb; text-align: center; padding-top: 10px; padding-bottom: 10px;">
-        <span style="color: #00203e; font-weight: bold; font-size: 1.25rem;">
-            FEATURED SERVICES
-        </span>
-    </div>
-    <section class="service-sections" style="text-align: center; padding-top: 15px; padding-bottom: 5px; text-decoration: none;" aria-label="Agency service areas">
-
-        <article class="service-card" id="services">
-            <span class="service-card__label">About</span>
-            <h2>Illinois State Police History</h2>
-            <p>Currently known as the Illinois State Police, ISP was founded in 1922 under the name Illinois Highway Maintenance Police..</p>
-            <input class="btn-isp" value="ABOUT" />
-        </article>
-
-        <article class="service-card" id="records">
-            <span class="service-card__label">BECOME A TROOPER</span>
-            <h2>Employment</h2>
-            <p>More Information on Becoming a Trooper</p>
-            <a class="btn-isp" a11y-hit-target="@A11yTargetSize.Minimum">
-                BECOME A TROOPER
-            </a>
-        </article>
-
-        <article class="service-card" id="safety">
-            <span class="service-card__label">PUBLIC SERVICES</span>
-            <h2>Public safety updates</h2>
-            <p>Find current advisories, preparedness resources, and regional safety information.</p>
-            <button class="btn-isp" type="button">PUBLIC SERVICES</button>
-        </article>
-
-        <article class="service-card" id="contact">
-            <span class="service-card__label">LAW ENFORCEMENT SERICES</span>
-            <h2>District offices</h2>
-            <p>Locate offices, hours, and contact channels for agency services across the state.</p>
-            <a class=" btn-isp" a11y-hit-target="@A11yTargetSize.Minimum">
-                LAW ENFORCEMENT
-            </a>
-        </article>
-    </section>
-</div>
 <div class="section-heading">
     <p>Popular services</p>
     <h2 id="quick-actions-title">How can we help?</h2>

@@ -78,7 +78,7 @@ body {
 }
 
 .official-banner {
-    background: #eef1f4;
+    background: #5F3212;
     border-bottom: 1px solid #cfd8df;
     color: #1f2f3d;
     font-size: 0.9rem;
@@ -599,9 +599,9 @@ code {
 /* Bootstrap 5 ISP branded accessible primary button */
 .btn-isp {
     color: #ffffff;
-    background-color: #75674d;
-    border-color: #75674d;
-    border: 1px solid #75674d;
+    background-color: #5F3212;
+    border-color: #5F3212;
+    border: 1px solid #5F3212;
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
     font-weight: 500;
@@ -670,14 +670,14 @@ code {
 /* Footer Styling */
 #ispFooter {
     margin-top: 3rem;
-    background-color: #75674d;
+    background-color: #5F3212;
     color: #c6c6c6;
     padding: 0;
     border-top: 1px solid #555;
 }
 
 .footer-primary {
-    background-color: #75674d;
+    background-color: #5F3212;
     padding: 3rem 0;
 }
 
@@ -760,7 +760,7 @@ code {
 }
 
 .ispHeader {
-    background-color: #75674d;
+    background-color: #5F3212;
     color: white;
     font-weight: bold;
     font-size: 1.25rem;
@@ -769,7 +769,7 @@ code {
 }
 
 .ispSubHeader {
-    background-color: #75674d;
+    background-color: #5F3212;
     color: white;
     font-weight: bold;
     font-size: 1.25rem;
