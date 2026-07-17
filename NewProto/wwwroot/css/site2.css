@@ -80,7 +80,7 @@ body {
 .official-banner {
     background: #5F3212;
     border-bottom: 1px solid #cfd8df;
-    color: #1f2f3d;
+    color: #fff;
     font-size: 0.9rem;
 }
 
@@ -103,7 +103,7 @@ body {
 
     .official-banner__inner span {
         align-items: center;
-        background: #13294b;
+        background: #FFAA00;
         border-radius: 3px;
         color: #ffffff;
         display: inline-flex;
