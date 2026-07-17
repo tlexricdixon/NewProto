@@ -9,6 +9,11 @@ namespace NewProto
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddA11yDefaults(options =>
+            {
+                options.NewTabText = "opens in new window";
+                options.DownloadText = "downloads file";
+            });
 
             var app = builder.Build();
 

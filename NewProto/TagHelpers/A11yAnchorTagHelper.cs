@@ -104,27 +104,30 @@ public sealed class A11yAnchorTagHelper : TagHelper
             return;
         }
 
+        var combinedHints = A11yTagHelperUtilities.CombineHints(hints);
+        var childContent = await output.GetChildContentAsync();
+
         var accessibleLabel = output.Attributes["aria-label"]?.Value?.ToString();
+
+        // If no aria-label was provided, use link text as the base label.
+        if (string.IsNullOrWhiteSpace(accessibleLabel))
+        {
+            var linkText = childContent.GetContent()?.Trim();
+            if (!string.IsNullOrWhiteSpace(linkText))
+            {
+                accessibleLabel = linkText;
+            }
+        }
+
         if (!string.IsNullOrWhiteSpace(accessibleLabel))
         {
             output.Attributes.SetAttribute(
                 "aria-label",
-                A11yTagHelperUtilities.AppendHint(accessibleLabel, A11yTagHelperUtilities.CombineHints(hints)));
+                A11yTagHelperUtilities.AppendHint(accessibleLabel, combinedHints));
         }
 
-        if (SuppressHint)
-        {
-            return;
-        }
-
-        var childContent = await output.GetChildContentAsync();
+        // Keep original link text only (no visible appended hint).
         output.Content.SetHtmlContent(childContent);
-        output.Content.AppendHtml(
-            A11yTagHelperUtilities.BuildHint(
-                hintText: A11yTagHelperUtilities.CombineHints(hints),
-                options: _defaults,
-                srOnly: ScreenReaderOnlyHint,
-                hideFromAccessibilityTree: !string.IsNullOrWhiteSpace(accessibleLabel)));
     }
 
     /// <summary>
