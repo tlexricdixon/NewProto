@@ -5,7 +5,7 @@
 @await Html.PartialAsync("_carousel")
 @await Html.PartialAsync("_featuredServices")
 
-<div class="section-heading row">
+<div class="section-heading row" style="padding-bottom: 20px">
     <section class="col-3">
         <p>Popular services</p>
         <h2 id="quick-actions-title">How can we help?</h2>
@@ -13,16 +13,19 @@
     <section class="quick-actions col-7" aria-labelledby="quick-actions-title">
         <div class="quick-actions__grid">
             <a class="btn-isp-primary-rounded" href="#records" a11y-hit-target="@A11yTargetSize.Minimum">
-                Mission
+                Licenses & Permits
             </a>
             <a class="btn-isp-primary-rounded" href="#safety" a11y-hit-target="@A11yTargetSize.Minimum">
-                History
+                Reports & Records
             </a>
             <a class="btn-isp-primary-rounded" href="#services" a11y-hit-target="@A11yTargetSize.Minimum">
-                Divisions
+                Traffic & Road Safety
             </a>
             <a class="btn-isp-primary-rounded" href="#contact" a11y-hit-target="@A11yTargetSize.Minimum">
-                Awards
+                Crime Reporting
+            </a>
+            <a class="btn-isp-primary-rounded" href="#contact" a11y-hit-target="@A11yTargetSize.Minimum">
+                Victim Resources
             </a>
             <a class="btn-isp-primary-rounded" href="#safety" a11y-hit-target="@A11yTargetSize.Minimum">
                 News
@@ -31,14 +34,14 @@
                 Social Media
             </a>
             <a class="btn-isp-primary-rounded" href="#contact" a11y-hit-target="@A11yTargetSize.Minimum">
-                Contact ISP
+                Contact Illinois State Police
             </a>
         </div>
     </section>
 </div>
-<section class="container-fluid" aria-labelledby="page-title">
+<section aria-labelledby="page-title">
     <div class="mb-5 mt-lg-1 row justify-content-center">
-        <div class="col-md-3 img-fluid parent" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b0/Turning_road.jpg'); background-repeat: no-repeat; background-position: center center;">
+        <div class="col-md-3 feature-card" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b0/Turning_road.jpg');">
             <div class="row" style="background: rgba(0, 0, 0, 0.3); height: 100%;">
                 <div class="container" style="padding-top: 50px; padding-bottom: 50px; padding-left: 20px;">
                     <h1 style="color: #ffffff; font-weight: bold;">Road Closures</h1>
@@ -54,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 img-fluid parent" style="background-image: url('/img/download.webp'); background-repeat: no-repeat; background-position: center center;">
+        <div class="col-md-3 feature-card" style="background-image: url('/img/download.webp');">
             <div class="row" style="background: rgba(0, 0, 0, 0.3); height: 100%;">
                 <div class="container" style="padding-top: 50px; padding-bottom: 50px; padding-left: 20px;">
                     <h1 style="color: #ffffff; font-weight: bold;"><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Amber Alert</span></h1>
@@ -73,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 img-fluid parent" style="background-image: url('/img/pexels-freestockpro-7444597.jpg'); background-repeat: no-repeat; background-position: center center;">
+        <div class="col-md-3 feature-card" style="background-image: url('/img/pexels-freestockpro-7444597.jpg');">
             <div class="row" style="background: rgba(0, 0, 0, 0.3); height: 100%;">
                 <div class="container" style="padding-top: 50px; padding-bottom: 50px; padding-left: 20px;">
                     <h1 style="color: #ffffff; font-weight: bold;">Sex Offender Registry</h1>
@@ -88,7 +91,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 img-fluid parent" style="background-image: url('/img/330px-Lighting_barrage.jpg'); background-repeat: no-repeat; background-position: center center;">
+        <div class="col-md-3 feature-card" style="background-image: url('/img/330px-Lighting_barrage.jpg');">
             <div class="row" style="background: rgba(0, 0, 0, 0.3); height: 100%;">
                 <div class="container" style="padding-top: 50px; padding-bottom: 50px; padding-left: 20px;">
                     <h1 style="color: #ffffff; font-weight: bold;"><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;">Get a Game Plan</span></h1>
